@@ -1,2 +1,27 @@
+![cleverbotfreeapi](https://www.cleverbot.com/images/cleverbot254x114.jpg)
+
 # aiocleverbot
- Async wrapper for cleverbot
+An async python wrapper for cleverbot.
+Does not require API KEY
+
+![Downloads](https://pepy.tech/badge/cleverbotfreeapi) ![PyPI](https://img.shields.io/pypi/v/cleverbotfreeapi) ![PyPI - Python Version](https://img.shields.io/pypi/pyversions/cleverbotfreeapi) ![PyPI - License](https://img.shields.io/pypi/l/cleverbotfreeapi)
+## Installation
+```pip
+pip install aiocleverbot
+```
+## Usage
+```python
+from aiocleverbot import cleverbot
+
+# Without context or session
+response=await cleverbot("Hello.")
+print(response)
+
+# With context, without session
+# Please note that context should include messages sent to Cleverbot as well as the responses
+response=await cleverbot("Bad.", ["hi.", "How are you?"])
+
+# Without context, with session
+response=await cleverbotfreeapi.cleverbot("Hi.", session="Deftera")
+response=await cleverbotfreeapi.cleverbot("Fine :)", session="Deftera")
+
