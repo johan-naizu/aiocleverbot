@@ -13,15 +13,11 @@ pip install aiocleverbot
 ```python
 from aiocleverbot import cleverbot
 
-# Without context or session
+# Without context
 response=await cleverbot("Hello.")
 print(response)
 
-# With context, without session
+# With context
 # Please note that context should include messages sent to Cleverbot as well as the responses
 response=await cleverbot("Bad.", ["hi.", "How are you?"])
-
-# Without context, with session
-response=await cleverbotfreeapi.cleverbot("Hi.", session="Deftera")
-response=await cleverbotfreeapi.cleverbot("Fine :)", session="Deftera")
 
