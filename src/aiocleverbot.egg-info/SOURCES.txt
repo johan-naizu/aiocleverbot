@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+src/aiocleverbot/__init__.py
+src/aiocleverbot/aiocleverbot.py
+src/aiocleverbot.egg-info/PKG-INFO
+src/aiocleverbot.egg-info/SOURCES.txt
+src/aiocleverbot.egg-info/dependency_links.txt
+src/aiocleverbot.egg-info/top_level.txt
