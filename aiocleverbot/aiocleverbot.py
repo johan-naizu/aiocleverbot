@@ -3,7 +3,7 @@ import re
 import aiohttp
 
 cookies = None
-sessions = dict()
+sessions = {}
 
 
 async def cleverbot(stimulus, context=None,session=None):
