@@ -1,2 +1,2 @@
 # aiocleverbot
- Async library for cleverbot
+ Async wrapper for cleverbot
