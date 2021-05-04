@@ -14,10 +14,11 @@ pip install aiocleverbot
 from aiocleverbot import cleverbot
 
 # Without context
-response=await cleverbot("Hello.")
+response=await cleverbot("Hello")
 print(response)
 
 # With context
 # Please note that context should include messages sent to Cleverbot as well as the responses
-response=await cleverbot("Bad.", ["hi.", "How are you?"])
+response=await cleverbot("Bad", ["hi", "How are you?"])
+print(response)
 
