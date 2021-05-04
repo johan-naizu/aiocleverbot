@@ -12,8 +12,8 @@ async def cleverbot(stimulus, context=None,session=None):
     global cookies, sessions
     if (cookies is None):
         url="https://www.cleverbot.com/"
-        async with aiohttp.ClientSession() as session:
-            async with session.get(url) as req:
+        async with aiohttp.ClientSession() as s:
+            async with s.get(url) as req:
                 cookies = {
                 'XVIS': re.search(
                 r"\w+(?=;)",
@@ -43,10 +43,11 @@ async def cleverbot(stimulus, context=None,session=None):
     payload += "cb_settings_scripting=no&islearning=1&icognoid=wsf&icognocheck="
 
     payload += hashlib.md5(payload[7:33].encode()).hexdigest()
-    async with aiohttp.ClientSession() as session:
-        async with session.post("https://www.cleverbot.com/webservicemin?uc=UseOfficialCleverbotAPI",cookies=cookies,data=payload) as req:
-            getresponse = re.split(r'\\r', str(req.content))[0]
-    response = getresponse[2:-1]
+    async with aiohttp.ClientSession() as s:
+        async with s.post("https://www.cleverbot.com/webservicemin?uc=UseOfficialCleverbotAPI",cookies=cookies,data=payload) as req:
+            resp=await req.read()
+            pos = str(resp).find(r"\r")
+            response = str(resp)[2:pos]
     if session:
         sessions[session].extend([stimulus, response])
     return response
