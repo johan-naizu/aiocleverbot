@@ -1,10 +1,10 @@
-![cleverbotfreeapi](https://www.cleverbot.com/images/cleverbot254x114.jpg)
+![cleverbotfreeapi](https://i.imgur.com/HEskou1.jpg)
 
 # aiocleverbot
 An async python wrapper for cleverbot.
 Does not require API KEY
 
-![Downloads](https://pepy.tech/badge/cleverbotfreeapi) ![PyPI](https://img.shields.io/pypi/v/cleverbotfreeapi) ![PyPI - Python Version](https://img.shields.io/pypi/pyversions/cleverbotfreeapi) ![PyPI - License](https://img.shields.io/pypi/l/cleverbotfreeapi)
+![Downloads](https://pepy.tech/badge/aiocleverbot) ![PyPI](https://img.shields.io/pypi/v/aiocleverbot) ![PyPI - Python Version](https://img.shields.io/pypi/pyversions/aiocleverbot) ![PyPI - License](https://img.shields.io/pypi/l/aiocleverbot)
 ## Installation
 ```pip
 pip install aiocleverbot
