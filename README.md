@@ -1,4 +1,4 @@
-![cleverbotfreeapi](https://i.imgur.com/HEskou1.jpg)
+![aiocleverbot](https://i.imgur.com/HEskou1.jpg)
 
 # aiocleverbot
 An async python wrapper for cleverbot.
